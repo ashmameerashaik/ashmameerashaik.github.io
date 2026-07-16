@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shaik Ashma Meera | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+
+/* Header */
+
+header{
+    background:#0d47a1;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+
+/* Home */
+
+.home{
+
+height:90vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:linear-gradient(
+rgba(13,71,161,.8),
+rgba(25,118,210,.8)
+);
+
+color:white;
+
+}
+
+
+.home h1{
+
+font-size:45px;
+
+}
+
+
+.home p{
+
+font-size:20px;
+
+margin:20px;
+
+}
+
+
+.btn{
+
+background:#ffeb3b;
+
+padding:12px 25px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+color:black;
+
+}
+
+
+
+/* Common Sections */
+
+
+section{
+
+padding:60px 10%;
+
+}
+
+
+.title{
+
+text-align:center;
+
+color:#0d47a1;
+
+margin-bottom:30px;
+
+}
+
+
+
+/* About */
+
+
+.about{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+line-height:1.8;
+
+}
+
+
+
+/* Technology */
+
+
+.tech{
+
+text-align:center;
+
+}
+
+
+select{
+
+padding:12px;
+
+width:300px;
+
+font-size:16px;
+
+}
+
+
+
+/* Blogs */
+
+
+.blog-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+
+.blog{
+
+background:white;
+
+padding:25px;
+
+border-radius:10px;
+
+box-shadow:0px 5px 15px #ccc;
+
+}
+
+
+.blog h3{
+
+color:#1565c0;
+
+margin-bottom:10px;
+
+}
+
+
+
+/* Contact */
+
+
+.contact{
+
+background:#0d47a1;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+.contact a{
+
+color:#ffeb3b;
+
+}
+
+
+
+/* Footer */
+
+
+footer{
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+padding:15px;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:15px;
+
+text-align:center;
+
+}
+
+
+.home h1{
+
+font-size:30px;
+
+}
+
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+Ashma Meera
+</div>
+
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#technology">Technologies</a></li>
+
+<li><a href="#blogs">Blogs</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+
+<!-- HOME -->
+
+
+<section class="home" id="home">
+
+<div>
+
+<h1>
+Shaik Ashma Meera
+</h1>
+
+
+<p>
+B.Tech 2.1 Student<br>
+Amity University Hyderabad
+</p>
+
+
+<a class="btn" href="#about">
+View Profile
+</a>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+
+<h2 class="title">
+About Me
+</h2>
+
+
+<div class="about">
+
+
+<p>
+Hello, I am <b>Shaik Ashma Meera</b>.
+I am pursuing <b>B.Tech 2.1</b> at
+<b>Amity University Hyderabad</b>.
+</p>
+
+
+<p>
+I am interested in programming,
+software development, web technologies,
+Artificial Intelligence and emerging technologies.
+</p>
+
+
+<p>
+My aim is to improve my coding skills and
+develop innovative software solutions.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- TECHNOLOGY -->
+
+
+<section id="technology">
+
+
+<h2 class="title">
+Technologies
+</h2>
+
+
+<div class="tech">
+
+
+<select id="techSelect" onchange="openTech()">
+
+
+
+<option value="">
+Select Technology
+</option>
+
+
+
+<option value="https://onlinegdb.com/0q8obcajg">
+Java
+</option>
+
+
+
+<option value="https://www.onlinegdb.com/">
+Python
+</option>
+
+
+
+<option value="https://www.onlinegdb.com/">
+C Programming
+</option>
+
+
+
+<option value="https://www.onlinegdb.com/">
+C++
+</option>
+
+
+
+<option value="#">
+HTML & CSS
+</option>
+
+
+
+<option value="#">
+JavaScript
+</option>
+
+
+
+<option value="#">
+SQL
+</option>
+
+
+
+<option value="#">
+Artificial Intelligence
+</option>
+
+
+
+<option value="#">
+Machine Learning
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- BLOGS -->
+
+
+<section id="blogs">
+
+
+<h2 class="title">
+Technology Blogs
+</h2>
+
+
+
+<div class="blog-container">
+
+
+<div class="blog">
+
+<h3>
+Artificial Intelligence
+</h3>
+
+<p>
+AI allows computers to learn,
+analyze data and make intelligent decisions.
+</p>
+
+</div>
+
+
+
+<div class="blog">
+
+<h3>
+Python Programming
+</h3>
+
+<p>
+Python is popular because of its simple syntax
+and applications in AI, automation and data science.
+</p>
+
+</div>
+
+
+
+<div class="blog">
+
+<h3>
+Java Development
+</h3>
+
+<p>
+Java is used for enterprise applications,
+Android development and backend systems.
+</p>
+
+</div>
+
+
+
+<div class="blog">
+
+<h3>
+C and C++
+</h3>
+
+<p>
+C and C++ help programmers understand
+memory management and system programming.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section class="contact" id="contact">
+
+
+<h2>
+Contact Me
+</h2>
+
+<br>
+
+
+<p>
+Name : Shaik Ashma Meera
+</p>
+
+
+<p>
+Course : B.Tech 2.1
+</p>
+
+
+<p>
+University : Amity University Hyderabad
+</p>
+
+
+<p>
+Email :
+<a href="mailto:ashmameerashaik@gmail.com">
+ashmameerashaik@gmail.com
+</a>
+</p>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 Shaik Ashma Meera | Portfolio
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function openTech(){
+
+let link =
+document.getElementById("techSelect").value;
+
+
+if(link!=""){
+
+window.open(link,"_blank");
+
+}
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
